@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBDCDC"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtcatat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:fontFamily="@font/architects_daughter"
+        android:text="Catatan"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <TextView
+        android:id="@+id/txtpembe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/architects_daughter"
+        android:text="Pembelian"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/txtcatat"
+        app:layout_constraintStart_toStartOf="@id/txtcatat"
+        app:layout_constraintTop_toBottomOf="@id/txtcatat"
+        tools:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="121dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="@color/pink"
+        android:fontFamily="@font/amaranth"
+        android:text="Login"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="@id/imageView"
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="283dp"
+        android:layout_height="218dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="@id/txtpembe"
+        app:layout_constraintHorizontal_bias="0.343"
+        app:layout_constraintStart_toStartOf="@id/txtpembe"
+        app:layout_constraintTop_toBottomOf="@id/txtpembe"
+        app:srcCompat="@drawable/pam" />
+</androidx.constraintlayout.widget.ConstraintLayout>
